@@ -1,14 +1,34 @@
-// import hello from "../hello";
+import {FizzBuzz} from "../fizzBuzz";
+
 
 describe('FizzBuzz tdd test', () => {
 
-    beforeEach( () => {
-	})
+    it('Un argument 3 doit retourner [1, 2, "Fizz"]', () => {
+        const fizzBuzz = new FizzBuzz();
+        const attendu : (string|number)[] = [1, 2, "Fizz"]
+        const resultat : (string|number)[] = fizzBuzz.fizzBuzz(3);
 
-    it('write my first test', () => {
-        expect(1).toEqual(1)
+        expect(resultat).toEqual(attendu);
     });
+
+
+    it('Un argument 5 doit retourner [1, 2, "Fizz", 4, "Buzz"]', () => {
+        const fizzBuzz = new FizzBuzz();
+        const attendu : (string|number)[] = [1, 2, "Fizz", 4, "Buzz"]
+        const resultat : (string|number)[] = fizzBuzz.fizzBuzz(5);
+
+        expect(resultat).toEqual(attendu);
+    }); 
+    
+    it('Un argument 15 doit retourner [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]', () => {
+        const fizzBuzz = new FizzBuzz();
+        const attendu : (string|number)[] = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+        const resultat : (string|number)[] = fizzBuzz.fizzBuzz(15);
+
+        expect(resultat).toEqual(attendu);
+    });     
 });
+
 
 
 // Given an integer n, return a string array answer (1-indexed) where:
