@@ -20,13 +20,21 @@ describe('FizzBuzz tdd test', () => {
         expect(resultat).toEqual(attendu);
     }); 
     
-    it('Un argument 15 doit retourner [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]', () => {
+    it('Un argument 15 doit retourner [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", "Fizz", 14, "FizzBuzz"]', () => {
         const fizzBuzz = new FizzBuzz();
-        const attendu : (string|number)[] = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+        const attendu : (string|number)[] = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", "Fizz", 14, "FizzBuzz"]
         const resultat : (string|number)[] = fizzBuzz.fizzBuzz(15);
 
         expect(resultat).toEqual(attendu);
-    });     
+    });
+    
+    it('Un argument 55 doit retourner\n[1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", "Fizz", 14, "FizzBuzz",  16, 17, "Fizz", 19, "Buzz", "Fizz", 22, "Fizz", "Fizz", "Buzz", 26, "Fizz", 28, 29, "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "Buzz", 41, "Fizz", "Fizz" ,44, "FizzBuzz",46,47,"Fizz",49,"Buzz","FizzBuzz","Buzz","FizzBuzz","FizzBuzz","Buzz"]', () => {
+        const fizzBuzz = new FizzBuzz();
+        const attendu : (string|number)[] = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", "Fizz", 14, "FizzBuzz",  16, 17, "Fizz", 19, "Buzz", "Fizz", 22, "Fizz", "Fizz", "Buzz", 26, "Fizz", 28, 29, "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "Buzz", 41, "Fizz", "Fizz" ,44, "FizzBuzz",46,47,"Fizz",49,"Buzz","FizzBuzz","Buzz","FizzBuzz","FizzBuzz","Buzz"]
+        const resultat : (string|number)[] = fizzBuzz.fizzBuzz(55);
+
+        expect(resultat).toEqual(attendu);
+    }); 
 });
 
 

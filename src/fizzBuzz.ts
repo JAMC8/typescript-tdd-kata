@@ -9,12 +9,12 @@ export class FizzBuzz {
             resultat[i] = "";
             isFizzBuzz = false;
             
-            if(chiffre % 3 == 0) {
+            if(chiffre % 3 == 0 || chiffre.toString().includes("3")) {
                 resultat[i] += "Fizz";
                 isFizzBuzz = true;
             } 
             
-            if(chiffre % 5 == 0) {
+            if(chiffre % 5 == 0 || chiffre.toString().includes("5")) {
                 resultat[i] += "Buzz";
                 isFizzBuzz = true;
             }
