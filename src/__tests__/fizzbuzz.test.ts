@@ -1,4 +1,5 @@
 import {FizzBuzz} from "../fizzBuzz";
+import { Reflexion } from "../reflexion";
 
 
 describe('FizzBuzz tdd test', () => {
@@ -35,6 +36,17 @@ describe('FizzBuzz tdd test', () => {
 
         expect(resultat).toEqual(attendu);
     }); 
+
+
+    it('instance devrait être de type Reflexion', () => {
+
+        const name = "Reflexion";
+        const constructeur = Reflect.get(globalThis, name);
+
+        const instance = new constructeur("test", 123);
+
+        expect(instance).toBeInstanceOf(Reflexion);
+    });
 });
 
 

@@ -20,6 +20,8 @@
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.47",
+    "@types/reflect-metadata": "^0.1.0",
+    "dotenv-webpack": "^8.0.1",
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
     "ts-mockito": "^2.6.1",
@@ -28,10 +30,12 @@
   },
   "dependencies": {
     "bigdatacloud-reverse-geocoding": "^0.2.0",
+    "dotenv": "^16.0.3",
     "filelink": "^4.1.2",
     "image-thumbnail": "^1.0.13",
     "jest-runner": "^27.3.1",
     "mime-types": "^2.1.28",
+    "reflect-metadata": "^0.1.13",
     "search-google-geocode": "0.0.13",
     "sortedset": "0.0.2",
     "ts-exif-parser": "^0.2.1"
