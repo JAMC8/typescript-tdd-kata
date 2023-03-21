@@ -40,8 +40,8 @@ describe('FizzBuzz tdd test', () => {
 
     it('instance devrait être de type Reflexion', () => {
 
-        const name = "Reflexion";
-        const constructeur = Reflect.get(globalThis, name);
+        const nom = "Reflexion";
+        const constructeur = Reflect.get(globalThis, nom);
 
         const instance = new constructeur("test", 123);
 
